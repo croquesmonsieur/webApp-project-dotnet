@@ -1,0 +1,15 @@
+﻿@page
+@using webAppAway.Model
+@model webAppAway.Pages.teacherModel
+@{
+}
+<table>
+    @foreach(var teacher in Model.teacherList)
+    {
+        <tr>
+        <td>@teacher.Id</td>
+            <td>@teacher.Name</td>
+            <td>@teacher.ClassId</td>
+            </tr>                 
+    }
+</table>

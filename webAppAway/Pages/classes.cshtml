@@ -1,0 +1,24 @@
+﻿@page
+@model webAppAway.Pages.classesModel
+@{
+}
+<table>
+    @foreach(var student in Model.studentClassList)
+    {
+        <tr>
+            <td>@student.Id</td>
+            <td>@student.Name</td>
+            <td>@student.ClassId</td>
+        </tr>                 
+    }
+</table>
+<table>
+    @foreach(var student in Model.studentSecondClassList)
+    {
+        <tr>
+            <td>@student.Id</td>
+            <td>@student.Name</td>
+            <td>@student.ClassId</td>
+        </tr>                 
+    }
+</table>
